@@ -77,7 +77,8 @@
   "scripts": {
     "build": "gulp build",
     "watch": "gulp watch",
-    "start": "gulp watch"
+    "start": "gulp watch",
+    "test": "gulp tests"
   },
   "author": "The Octopus Deploy team and contributors",
   "license": "Apache-2.0",

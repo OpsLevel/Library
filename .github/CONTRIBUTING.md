@@ -75,6 +75,28 @@ npm install
 
 Congratulations, you are now ready to build and test the site locally.
 
+##### Running tests
+
+The repository includes automated tests that validate step templates and logos. To run the tests locally:
+
+```
+npm test
+```
+
+Or using gulp directly:
+
+```
+gulp tests
+```
+
+These tests verify:
+- Step template JSON files are valid and well-formed
+- Required fields are present (Id, Name, LastModifiedBy, etc.)
+- Step template IDs are unique GUIDs
+- Logo files have correct naming and format
+
+All tests must pass before a pull request can be merged. The continuous integration pipeline automatically runs these tests on every pull request and push to the main branch.
+
 ##### Building and testing the site
 
 From the root of the repository, run the following command: 
